@@ -1,0 +1,273 @@
+from random import randint
+print("Welcome to Barry's Awesome Adventure!")
+print("You get to live out one of Barry's adventures! But you can make the choices for yourself.")
+print('Good luck, Adventurer\n')
+
+class Barry:
+    def __init__(self):
+        self.health = 100
+        self.damage = 20
+
+class Hydra:
+    def __init__(self):
+        self.health = 70
+        self.damage = 15
+
+class Demon_King:
+    def __init__(self):
+        self.health = 75
+        self.damage = 15
+
+demon = Demon_King()
+hydra = Hydra()
+barry = Barry()
+
+class Chance:
+    def __init__(self):
+        self.weapons = {28:'Sword of Might', 27:'Axe of Ancient Rust', 29:'Hammer of Pounding'}
+        self.coins = [5, 10, 15, 20, 25, 30]
+        self.potions = [0, 1, 2, 3]
+        self.num_curr = 0
+        self.num_pot = 0
+        self.weapon = 0
+        self.randint_func = randint(27, 29)
+    def luck_coins(self):
+        self.num_curr = self.coins[randint(0, 6)]
+        return (self.num_curr)
+    def luck_potions(self):
+        self.num_pot = self.potions[randint(0, 3)]
+        return (self.num_pot)
+    def luck_weapons(self):
+        self.weapon = self.weapons.get(self.randint_func)
+        return(self.weapon)
+
+chance = Chance()
+
+class Attack:
+    def __init__(self):
+        self.hp_h = hydra.health
+        self.hp_b = barry.health
+        self.att_h = hydra.damage
+        self.att_b = barry.damage
+        self.loot = {'coins': chance.luck_coins(), 'potion': chance.luck_potions(), 'weapon':chance.luck_weapons()}
+        self.potion_hp = 15
+        self.last_phrase = ('In the end you get this loot: {coins} coins, {potions} potions, {weapons}\n'.format(coins=self.loot.get('coins'), potions=self.loot.get('potion'), weapons=self.loot.get('weapon')))
+        self.my_list = []
+
+    def replenish(self, num):
+        self.hp_b += num * self.potion_hp
+
+    def hydra_attack(self):
+        for i in range(0, 100):
+            self.hp_b -= self.att_h
+            if self.hp_b <= 0:
+                print('You f*cking died!\n')
+                break
+            else:
+                print('The Hydra deals you {damage} and you have {hp} left!\n'.format(damage=self.att_h, hp=self.hp_b))
+            self.hp_h -= self.att_b
+            if self.hp_h <= 0:
+                print('The beast is dead!!!')
+                print('You won!\n')
+                break
+            else:
+                print('You deal hydra {damage} and it has {hp} left!\n'.format(damage=self.att_b, hp=self.hp_h))
+        print(self.last_phrase)
+        self.my_list.append(self.loot.get('coins'))
+        self.my_list.append(self.loot.get('potion'))
+        self.my_list.append(self.loot.get('weapon'))
+
+    def demon_king(self):
+        for i in range(0, 100):
+            self.hp_b -= demon.damage
+            if self.hp_b <= 0:
+                print('You f*cking died!\n')
+                break
+            else:
+                print('The Demon King deals you {damage} and you have {hp} left!\n'.format(damage=demon.damage, hp=self.hp_b))
+            demon.health -= self.att_b
+            if self.demon.health <= 0:
+                print('He is dead!!!')
+                print('You won!\n')
+                break
+            else:
+                print('You deal Demon King {damage} and he has {hp} left!\n'.format(damage=self.att_b, hp=demon.health))
+
+awesome_attack = Attack()
+
+def road_choice():
+    if choice == 'l':
+        print(' - Very well, your choice is left - \n')
+        print('~ ~ The Road ~ ~\n')
+        print(left_func())
+    elif choice == 's':
+        print(' - Very well, your choice is straight -\n')
+        print('~ ~ The Road ~ ~\n')
+        print(straight_func)
+    elif choice == 'r':
+        print(' - Very well, your choice is right -\n')
+        print('~ ~ The Road ~ ~\n')
+
+def left_func():
+    print("The road you chose is quite empty, just like that man at the gates warned you.")
+    print('You go on and on and on and on, does the road have no end?!')
+    print("Wait... There looms a town on the horizon. The map says it's Frostburg - the most Northern town of the Kingdom.")
+    print("As you approach you feel great hunger, you forgot to take some food while hurrying to take off, so your HP is reduced to 70\n")
+    barry.health -= 30
+    print(' - A little bit of history - \n')
+    print('  Frostburg was once established as an avanpost in time immemorable.')
+    print('  But as time went on the avanpost slowly grew to a town where almost everyone is gloomy.')
+    print("  What's the reason? Well, they have been defending the South lands from monsters for centuries!")
+    print("  So it's no wonder they ended up so strange and dark!")
+    print('  However this town has been praised by many for its delicious steaks.')
+    print('----------------------------\n')
+    print('You come to the gates of Frostburg and, to your surprise, no one has ever heard of anybody named "Hero Barry"!')
+    print('Luckily, there is a monster nearby and if you kill it, the guards will let you in.')
+    print('As you carefully tread the path the town-people showed you, a cave looms ahead and there is a Hydra sitting right there!')
+    print("Fortunately, you haven't forgotten your sword and Hydras aren't that tough.")
+    print('~ ~ Battle! ~ ~\n')
+    # Encounter
+    awesome_attack.hydra_attack()
+    if awesome_attack.my_list[1] > 0:
+        potion_drink = input('Would you like to replenish your health? y/n ')
+        if potion_drink == 'y':
+            if awesome_attack.my_list[1] == 1:
+                awesome_attack.replenish(1)
+                print('You now have {HP} HP points!\n'.format(HP=awesome_attack.hp_b))
+            else:
+                num = int(input('How many would you like to use? '))
+                awesome_attack.replenish(num)
+                print('You now have {HP} HP points!\n'.format(HP=awesome_attack.hp_b))
+
+    new_weapon = input('You get a cool {weapon} that has {hit_points} hit points. (you currently have {your_hit} hit points) Would you like to equip this as your main weapon? y/n '.format(weapon=awesome_attack.my_list[2], hit_points=chance.randint_func, your_hit=barry.damage))
+    if new_weapon == 'y':
+        barry.damage += chance.randint_func - 20
+        print('You now have {hit_points} hit points!\n'.format(hit_points=barry.damage))
+    
+    barry.health = awesome_attack.hp_b
+    print('The villagers let you in and you stay in a very good pub for free!')
+    print('You go up to the bartender, Lark, and have a nice chat. He says that the Hydra has been a real headache since it came here 2 weeks ago')
+    print('He also said that some people believe that the beast was sent here by the Demon King himself!')
+    print('Hmm... Interesting')
+    print('Anyway, you remember that there is Princess to save and ask the bartender for directions')
+    print('And Lark is happy to help. He says:')
+    print("- You chose a really poor road, my lad! The Eastern Avanpost doesn't let anyone through")
+    print("- Of course you can try to but I doubt they will oblige")
+    print("- Although!.. There is rumour of a village far in the mountains. Maybe it's true, maybe it's not. But you should try that way also\n")
+    print('You say goodbye to all your newly-made friends in the pub and get along with the road')
+    print("It's quite cold after 4 hours of walking but the bartender gave you a cup of excellent mead, as a parting gift, to keep warm")
+    print('~ ~ The Avanpost ~ ~\n')
+    print('The captain of The Eastern Avanpost walks out to greet you. He is happy to see one of the greatest heroes')
+    print('But when you say that you want to pass, he suddenly changes in face and says:\n')
+    print("- I'm sorry, but we are under the strictest orders not to let ANYONE through")
+    print('- Even you, Hero Barry. I would let you through, but rules are rules\n')
+    print('- But what am I to do?! I cannot go back, it is too long a way\n')
+    print("- Not to worry! I have a certain artifact that might help you.\n")
+    print('He shows you a map of a road that leads into the mountains and to a village far high up there')
+    print('This must be the path that Lark told me about!\n')
+    print('- Thank you, good captain. I will seek out this village\n')
+    print('You part with the captain and go by the map')
+    print('The road in the mountains is going to be tough...\n')
+    print('~ ~ Mountain Village ~ ~\n')
+    print('These Mountains are known for extreme cold and the faster you cross, the better')
+    print('Hmm... It seems a storm is due. That is not good')
+    print('As you continue to ascend the high slopes a hard, freezing wind starts blowing in your face')
+    print('The blizzard is here!\n')
+    cave = input('You see a cave! Do you wish to hide there? y/n ')
+    if cave == 'y':
+        print('You go into the cave to wait the storm out')
+        print('Upon entering you see a light. It looks like a fire. Warmth would be pleasant')
+        light = input('Do you wish to approach? y/n \n')
+        if light == 'n':  
+            print("You don't go near the fire and instead wait in the cold part of the cave, near the entrance")
+            print('After some time it gets too cold and you just must go to search for a fire')
+        print('You slowly go up to the fire and see a man!')
+        print('You talk. His name is Maaron. He lives in a village not far from here and is also waiting the storm out')
+        print('When the storm ends, he will guide you to the village')
+        print('Suddenly, a man joins you, his name is Baren and he, too, lives in that village\n')
+    else:
+        print('You decide to wait the blizzard out in the cold. What a dumb idea...')
+        print('As you sit, it gets too cold but there is no fire to be found')
+        print("You regret that you didn't go into the cave")
+        print('Suddenly, footsteps!')
+        print('You turn your head and see a bearded man clothed all in warm')
+        print('He criticizes you for not going into that cave')
+        print('You both go into the cave and meet another man. The three of you talk')
+        print('The name of the man that found you in the snow is Baren and the other ones is Maaron')
+        print('They live in a village far in the Mountains. They will take you there after the storm\n')
+    print('~ ~ The village ~ ~\n')
+    print('When the blizzard finally ended, you and Maaron with Baren go towards the village')
+    print("You are very hungry and cold by this time and Lark's mead is gone")
+    print('Your HP is down by 20')
+    barry.health -= 20
+    print(barry.health)
+    print('Luckily, the villagers have hot chicken')
+    print('But do you have the money to buy it?')
+    print('One chicken replenishes 10 HP and costs 5 coins and you have {coins} coins'.format(coins=awesome_attack.my_list[0]))
+    chicken_num = round(awesome_attack.my_list[0] / 5)
+    print('So you can buy {num} chickens'.format(num=chicken_num))
+    chicken = int(input('How many chickens do you want to buy? (if any) '))
+    if chicken > 0:
+        print('You buy {chicken} chickens and use all of them'.format(chicken=chicken))
+        print('Your HP is now {HP}'.format(HP=barry.health + awesome_attack.my_list[0]*2))
+        print('You are left with {coins} coins\n'.format(coins=round(awesome_attack.my_list[0] - chicken_num*5)))
+    else:
+        print('You choose not to buy anything. Not a good decision...\n')
+    print('Now the road is quite tedious and boring, so we will describe it plainly')
+    print("It goes along the Southern skirts of the Mountains and is devoid of nearly all life (because of proximity to the Demon King's Castle)")
+    print('After some time you get to the Eastern Gates')
+    print('The sight of such a thing instiils fear in all but, of course, you')
+    print("You take a step and now you are in Demon King's land...\n")
+    print('~ ~ The Last Part ~ ~\n')
+    print('The land is barren and just waste')
+    print('The last strife and the Princess will be saved!')
+    print('As you come up to the castle you call upon the Demon King loud and your voice rings through the halls of his castle like thunder')
+    print('Therefore Demon King came, climbing slowly from his bone throne, and the rumour of his feet was like thunder underground. And he issued forth clad in black armour, and he stood before the yourself like a tower, iron-crowned, and his vast shield, sable unblazoned, cast a shadow over him like a stormcloud.')
+    print('He is certainly bigger than you expected and he says:\n')
+    print('- Oh, why would thou come hither? Do you not know my might?!\n')
+    print('And with these words he stamped so hard the ground shook!')
+    print('You, in turn, say:')
+    print('- I have not come here to exchange words with one like you!\n')
+    print('And now let the battle commence!!!')
+    # Final Battle
+    awesome_attack.demon_king()
+
+
+
+
+
+def straight_func():
+    pass
+def right_func():
+    pass
+print("Mighty Barry was one of the grandest heroes this world has ever known! He has done so many cool things we can't even remember them all.")
+print('So we are going to play at his most famous story we still remember - The Demonish Escapade!')
+print("Let's begin...\n")
+print('~ ~ Beginning ~ ~\n')
+print("-Ahhh... Where am I? - you ask yourself and get a stout answer - Hero Barry! Are you awake? You do remember it's coronation day, right?")
+print("-W-What? - you have clearly overslept but the guard doesn't like to bother one such as you and pretends everything is alright.")
+print("-Well, the Queen called for you earlier. Would you come, please?")
+print("-Of course! Right away, almost ready! - you say\n")
+print('After dressing (you forgot the sword but nobody seems to care, strange) the guard led you to the Queens chambers')
+print('Her Highness is very worried.\n')
+print("-Barry! The Kingdom, we, need you! - she cries")
+print("-What is the matter? What's wrong?")
+print("-The Princess, my daughter, has been kidnapped by one of Demon King's generals! You have to save her! I beg you!")
+print("-Never fear! I shall save the Princess! For am I not the Barry?\n")
+print('As you go out of the Gleaming Castle a man suddenly appears before you and says:')
+print("-Aren't you that hero? Barry, am I right?")
+print("-'Well, yes, I am' - you answer, still bewildered by his appearence")
+print("-Going on another adventure, eh?")
+print("Yes, I am in a matter of fact, to the Demon King's Castle. Maybe you can help me. Which way should I go? Left, right or straight? I have never been here before.")
+print('He says:')
+print("-Oh, you can go left. It sure is the shortest way but quite tedious and hard. Plus, it's hard to get through the Eastern Avanpost.")
+print("-You can also go straight, through the mountains, but you will miss the Mystery Tavern. It could have very interesting things.")
+print("-Or you can choose the longest way, which is right, but it is far more and pleasant than the other two.\n")
+choice = input('- So what do you choose? - (l, s, r)')
+if ((choice == 'l') or (choice == 's') or (choice == 'r')) == False:
+    print("You didn't choose a road!")
+    print('Please do:')
+    choice = input('- So what do you choose? - (l, s, r)')
+    road_choice()
+else:
+    road_choice()
