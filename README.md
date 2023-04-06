@@ -4,9 +4,9 @@ Here's what I can currently do (I regularly update it, so check it out often):
  - Django and DRF
  - Docker
  - MySQL and a little of PostgreSQL for databases
- - Basic Linux OS knowledge
- - Basic DevOps techniques and whatnot
- - Python in general
+ - Basic Linux OS knowledge and DevOps whatnot
+ - Git Actions
+ - Simple Telegram bot writing experience
 
 ### More about me as a human being
 I am almost 17 and enjoy wide range of things in many subjects!
