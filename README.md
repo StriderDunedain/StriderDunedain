@@ -3,7 +3,7 @@ Hello there! My name's Max and I'm a Python backend developer (still in learning
 Here's what I can currently do (I regularly update it, so check it out often):
  - Django and DRF
  - Docker
- - MySQL and a little of PostgreSQL for databases
+ - SQLite and a little of PostgreSQL for databases
  - Basic Linux OS knowledge and DevOps whatnot
  - Git Actions
  - Simple Telegram bot writing experience
