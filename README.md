@@ -6,6 +6,7 @@
 My name's Max and I'm a Python Backend Dev! Here's a quick overview at what I'm good (I regularly update it, so check it out often):
  - ![Django & DRF](https://img.shields.io/badge/Django-Django%20&%20DRF-092E20?style=for-the-badge&logo=Django)
  - ![Flask](https://img.shields.io/badge/Flask-Where%20would%20you%20go%20without%20it-000000?style=for-the-badge&logo=Flask)
+ - ![FastAPI](https://img.shields.io/badge/FastAPI-I%20am%20Lightning-009688?style=for-the-badge&logo=FastAPI)
  - ![Docker](https://img.shields.io/badge/Docker-Containerize%20'em%20all!-2496ED?style=for-the-badge&logo=Docker)
  - ![Yandex Cloud](https://img.shields.io/badge/Yandex%20Cloud-For%20the%20clouds-5282FF?style=for-the-badge&logo=Yandex%20Cloud)
  - ![SQLite & PostgreSQL](https://img.shields.io/badge/PostgreSQL-PostgreSQL%20and%20SQLite,%20naturally-4169E1?style=for-the-badge&logo=PostgreSQL)
