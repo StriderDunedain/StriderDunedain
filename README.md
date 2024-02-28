@@ -9,6 +9,7 @@ My name's Max and I'm a Python Backend Dev! Here's a quick overview at what I'm 
  - ![FastAPI](https://img.shields.io/badge/FastAPI-I%20am%20Lightning-009688?style=for-the-badge&logo=FastAPI)
  - ![Docker](https://img.shields.io/badge/Docker-Containerize%20'em%20all!-2496ED?style=for-the-badge&logo=Docker)
  - ![Yandex Cloud](https://img.shields.io/badge/Yandex%20Cloud-For%20the%20clouds-5282FF?style=for-the-badge&logo=Yandex%20Cloud)
+ - ![Google API](https://img.shields.io/badge/Google%20API-Drive%20&%20Sheets-34A853?style=for-the-badge)
  - ![SQLite & PostgreSQL](https://img.shields.io/badge/PostgreSQL-PostgreSQL%20and%20SQLite,%20naturally-4169E1?style=for-the-badge&logo=PostgreSQL)
  - ![SQLAlchemy & Alembic](https://img.shields.io/badge/SQlAlchemy%20&%20Alembic-Database%20Magic-D71F00?style=for-the-badge&logo=SQLAlchemy)
  - ![Git Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-2088FF?style=for-the-badge&logo=GitHub%20Actions)
