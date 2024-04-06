@@ -1,28 +1,27 @@
-# Hi, I’m @StriderDunedain - A Python Developer!
-![Python](https://img.shields.io/badge/Python-Go%20Python!-3776AB?style=for-the-badge&logo=Python)
+# Hi, I’m Max: A Python Dev 🐍 & A beginner GameDev 👾!
 
-### Hello there ~~General Kenobi~~!
+## About me as a human
+I'm almost 18 and enjoy wide range of subjects!
+ 1. Have a passion for languages: Know **Russian**, **English**󠁧󠁢󠁥, **German** and on my way to studying **Korean** 📖
+ 2. **Love reading books**! 📚
+ 3. Interested in **Biology, Chem, Math and Physics** along with other sciences 📘
+ 4. Aspire to apply to the **University of Vienna** 🧮
 
-My name's Max and I'm a Python Backend Dev! Here's a quick overview at what I'm good (I regularly update it, so check it out often):
- - ![Django & DRF](https://img.shields.io/badge/Django-Django%20&%20DRF-092E20?style=for-the-badge&logo=Django)
- - ![Flask](https://img.shields.io/badge/Flask-Where%20would%20you%20go%20without%20it-000000?style=for-the-badge&logo=Flask)
- - ![FastAPI](https://img.shields.io/badge/FastAPI-I%20am%20Lightning-009688?style=for-the-badge&logo=FastAPI)
- - ![Docker](https://img.shields.io/badge/Docker-Containerize%20'em%20all!-2496ED?style=for-the-badge&logo=Docker)
- - ![Yandex Cloud](https://img.shields.io/badge/Yandex%20Cloud-For%20the%20clouds-5282FF?style=for-the-badge&logo=Yandex%20Cloud)
- - ![Google API](https://img.shields.io/badge/Google%20API-Drive%20&%20Sheets-34A853?style=for-the-badge)
- - ![SQLite & PostgreSQL](https://img.shields.io/badge/PostgreSQL-PostgreSQL%20and%20SQLite,%20naturally-4169E1?style=for-the-badge&logo=PostgreSQL)
- - ![SQLAlchemy & Alembic](https://img.shields.io/badge/SQlAlchemy%20&%20Alembic-Database%20Magic-D71F00?style=for-the-badge&logo=SQLAlchemy)
- - ![Git Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-2088FF?style=for-the-badge&logo=GitHub%20Actions)
- - ![Telegram Bots](https://img.shields.io/badge/Telegram-Telegram%20bots%20experience-26A5E4?style=for-the-badge&logo=Telegram)
+## My Stack!
+Here's the stack I am pretty familiar with (with the exception for *GameDev* - still new to it!). I update it regularly, so check it out more often!
+|                                                          **Python & Backend**                                                                     |                                   **GameDev Stack**                                      |
+| :------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------: |
+| ![Django & DRF](https://img.shields.io/badge/Django-Django%20&%20DRF-092E20?style=for-the-badge&logo=Django)                                      | ![Unity](https://img.shields.io/badge/Unity-Unity-FFFFFF?style=for-the-badge&logo=Unity) |
+| ![Flask](https://img.shields.io/badge/Flask-Where%20would%20you%20go%20without%20it-000000?style=for-the-badge&logo=Flask)                        | ![C#](https://img.shields.io/badge/C%23-Sharpy!-512BD4?style=for-the-badge&logo=C%23)    |        
+| ![FastAPI](https://img.shields.io/badge/FastAPI-I%20am%20Lightning-009688?style=for-the-badge&logo=FastAPI)                                       |
+| ![Docker](https://img.shields.io/badge/Docker-Containerize%20'em%20all!-2496ED?style=for-the-badge&logo=Docker)                                   |
+| ![Yandex Cloud](https://img.shields.io/badge/Yandex%20Cloud-Clouds!-5282FF?style=for-the-badge&logo=Yandex%20Cloud)                               |  
+| ![Google API](https://img.shields.io/badge/Google%20API-Drive%20&%20Sheets-34A853?style=for-the-badge)                                            |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-PostgreSQL-4169E1?style=for-the-badge&logo=PostgreSQL)                                      |
+| ![SQLAlchemy & Alembic](https://img.shields.io/badge/SQlAlchemy%20+%20Alembic-Database%20Magic-D71F00?style=for-the-badge&logo=SQLAlchemy)        |
+| ![Git Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-2088FF?style=for-the-badge&logo=GitHub%20Actions)                              |
+| ![Telegram Bots](https://img.shields.io/badge/Telegram-Telegram%20bots-26A5E4?style=for-the-badge&logo=Telegram)                                  |
 
-### More about me as a human being
-I'm almost 18 and enjoy wide range of things in many subjects!
- 1. Passion for languages - I know **Russian** (as a native speaker), **English** (good enough to read Shakespear) and **German** (on my way to C1)
- 2. **Love reading books** on almost any subject
- 3. Interested in all sciences but mainly these - **Biology, Chem, Math and Physics**
- 4. Aspire apply to the **University of Vienna**
- 5. Also a big fan of **fantasy and sci-fi** - Lovecraft, Poe, Tolkien, Asimov are among my favourite writers!
-
-### Afterword, I guess?
-You'd like to collaborate on something? Would love to! Just DM me
- - 📨 How to reach me - maks.truxinov@yandex.ru or https://t.me/fantasy_geek
+## Afterword, I guess?
+You'd like to collaborate on something? Would love to! Just DM me:
+📨 maks.truxinov@yandex.ru | https://t.me/eldritch_coder 📨
