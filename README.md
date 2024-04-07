@@ -20,7 +20,7 @@ Here's the stack I am pretty familiar with (with the exception for *GameDev* - s
 | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-PostgreSQL-4169E1?style=for-the-badge&logo=PostgreSQL)                                      |
 | ![SQLAlchemy & Alembic](https://img.shields.io/badge/SQlAlchemy%20+%20Alembic-Database%20Magic-D71F00?style=for-the-badge&logo=SQLAlchemy)        |
 | ![Git Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-2088FF?style=for-the-badge&logo=GitHub%20Actions)                              |
-| ![Telegram Bots](https://img.shields.io/badge/Telegram-Telegram%20bots-26A5E4?style=for-the-badge&logo=Telegram)                                  |
+| ![Telegram Bots](https://img.shields.io/badge/Telegram-Simple%20bots-26A5E4?style=for-the-badge&logo=Telegram)                                  |
 
 ## Afterword, I guess?
 You'd like to collaborate on something? Would love to! Just DM me:
