@@ -16,11 +16,11 @@ Here's the stack I am pretty familiar with (with the exception for *GameDev* - s
 | ![FastAPI](https://img.shields.io/badge/FastAPI-I%20am%20Lightning-009688?style=for-the-badge&logo=FastAPI)                                       |
 | ![Docker](https://img.shields.io/badge/Docker-Containerize%20'em%20all!-2496ED?style=for-the-badge&logo=Docker)                                   |
 | ![Yandex Cloud](https://img.shields.io/badge/Yandex%20Cloud-Clouds!-5282FF?style=for-the-badge&logo=Yandex%20Cloud)                               |  
-| ![Google API](https://img.shields.io/badge/Google%20API-Drive%20&%20Sheets-34A853?style=for-the-badge)                                            |
+| ![Google API](https://img.shields.io/badge/Google%20API-Drive%20&%20Sheets-34A853?style=for-the-badge&logo=Google%20Drive)                        |
 | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-PostgreSQL-4169E1?style=for-the-badge&logo=PostgreSQL)                                      |
 | ![SQLAlchemy & Alembic](https://img.shields.io/badge/SQlAlchemy%20+%20Alembic-Database%20Magic-D71F00?style=for-the-badge&logo=SQLAlchemy)        |
 | ![Git Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-2088FF?style=for-the-badge&logo=GitHub%20Actions)                              |
-| ![Telegram Bots](https://img.shields.io/badge/Telegram-Simple%20bots-26A5E4?style=for-the-badge&logo=Telegram)                                  |
+| ![Telegram Bots](https://img.shields.io/badge/Telegram-Simple%20bots-26A5E4?style=for-the-badge&logo=Telegram)                                    |
 
 ## Afterword, I guess?
 You'd like to collaborate on something? Would love to! Just DM me:
