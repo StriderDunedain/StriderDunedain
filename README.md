@@ -1,4 +1,4 @@
-# Hi, I’m Max: A Python Dev 🐍 & A beginner GameDev 👾!
+# Hi, I’m Max: A Python Dev 🐍 & Beginner GameDev 👾!
 
 ## About me as a human
 I'm almost 18 and enjoy wide range of subjects!
