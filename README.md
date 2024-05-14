@@ -4,7 +4,7 @@
 
 ## About me as a human
 I'm almost 18 and enjoy wide range of subjects!
- 1. Have a passion for languages: Know **Russian**, **English**󠁧󠁢󠁥, **German** and on my way to studying **Korean** 📖
+ 1. Have a passion for languages: Know **Russian** (as a native), **English**󠁧󠁢󠁥, **German** and on my way to studying **Korean** 📖
  2. **Love reading books**! 📚
  3. Interested in **Biology, Chem, Math and Physics** along with other sciences 📘
  4. Aspire to apply to the **University of Vienna** 🧮
