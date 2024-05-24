@@ -1,7 +1,5 @@
 # Hi, I’m Max: A Python Dev 🐍 & Beginner GameDev 👾!
 
-<a href="https://app.daily.dev/null"><img src="https://api.daily.dev/devcards/v2/1D8OWDYMDTFxNLj4tVGi7.png?type=wide&r=vu1" width="652" alt="Max Trukhinov's Dev Card"/></a>
-
 ## About me as a human
 I'm almost 18 and enjoy wide range of subjects!
  1. Have a passion for languages: Know **Russian** (as a native), **English**󠁧󠁢󠁥, **German** and on my way to studying **Korean** 📖
