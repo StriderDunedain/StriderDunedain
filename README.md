@@ -24,4 +24,4 @@ Here's the stack I am pretty familiar with. I update it regularly, so check it o
 
 ## Afterword, I guess?
 You'd like to collaborate on something? Would love to! Just DM me:
-📨 maks.truxinov@yandex.ru | https://t.me/eldritch_coder 📨
+📨 maks.truxinov@yandex.ru | https://t.me/eldritch_gato 📨
